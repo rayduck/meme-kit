@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Meme Kit</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -46,7 +47,6 @@
   };
 
   function removeTransition(e){
-    console.log(e.propertyName);
     if(e.propertyName !== 'transform') return;
     this.classList.remove('playing');
   }
