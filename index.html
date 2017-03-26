@@ -32,30 +32,12 @@
   <audio data-key="73" src="sounds/ironic.ogg"></audio>
   <audio data-key="77" src="sounds/memes.ogg"></audio>
   <audio data-key="88" src="sounds/maymays.ogg"></audio>
+  <audio id="trump" src="sounds/trump.mp3"></audio>
+  <audio id="vaporwave" src="sounds/vaporwave.mp3"></audio>
+  <audio id="kira" src="sounds/kira.mp3"></audio>
+  <audio id="reee" src="sounds/reee.mp3"></audio>
 
-<script>
-
-
-
-  function playSound(e){
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    if(!audio) return;
-    audio.currentTime=0; //rewind to start so we can spam keys
-    audio.play();
-    key.classList.add('playing');
-  };
-
-  function removeTransition(e){
-    if(e.propertyName !== 'transform') return;
-    this.classList.remove('playing');
-  }
-
-  const keys = document.querySelectorAll('.key');
-  keys.forEach(key=> key.addEventListener('transitionend', removeTransition));
-
-  window.addEventListener('keydown', playSound);
-</script>
+<script src='index.js'></script>
 
 
 </body>
