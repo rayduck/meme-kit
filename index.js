@@ -21,10 +21,10 @@ window.addEventListener('keydown', playSound)
 let pressed = []
 const secretEffects = new Map()
   .set('trumpmeup', () => playMusic('trump'))
-  .set('shutthefuckup', () => stopMusic())
   .set('aesthetic', () => playMusic('vaporwave'))
   .set('bitesthedust', () => playMusic('kira'))
   .set('normiesgetout', () => playMusic('reee'))
+  .set('shutthefuckup', () => stopMusic())
 const longestCodeLength = [...secretEffects.keys()].reduce((a, b) => a.length > b.length ? a : b).length
 
 function secretController (inputs) {
