@@ -49,3 +49,15 @@ function playMusic (id) {
 function stopMusic () {
   Array.from(document.querySelectorAll('audio')).forEach(audio => { audio.pause() })
 }
+
+console.log(`
+T R U M P M E U P
+
+A E S T H E T I C
+
+B I T E S T H E D U S T
+
+N O R M I E S G E T O U T
+
+S H U T T H E F U C K U P
+`)
